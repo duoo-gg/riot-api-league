@@ -1,9 +1,9 @@
 {
-	"name": "dolejska-daniel/riot-api-league",
+	"name": "duoo-gg/riot-api-league",
 	"type": "library",
 	"description": "Riot League of Legends API wrapper for PHP8",
 	"keywords": ["riot", "league of legends", "api", "wrapper", "php8"],
-	"homepage": "https://github.com/dolejska-daniel/riot-api-league",
+	"homepage": "https://github.com/duoo-gg/riot-api-league",
 	"license": "GPL-3.0-or-later",
 	"authors": [
 		{
@@ -16,7 +16,7 @@
 		"test": "XDEBUG_MODE=coverage phpunit --configuration phpunit.xml --coverage-text --coverage-html build/coverage"
 	},
 	"require": {
-		"dolejska-daniel/riot-api-base": "^v2",
+		"duoo-gg/riot-api-base": "^1.0|dev-master",
 		"php": ">=8.1",
 		"ext-json": "*"
 	},
@@ -28,5 +28,11 @@
 			"RiotAPI\\LeagueAPI\\": "src/LeagueAPI"
 		}
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "stable",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/duoo-gg/riot-api-base.git"
+		}
+	]
 }

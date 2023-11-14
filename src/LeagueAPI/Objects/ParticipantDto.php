@@ -1106,4 +1106,108 @@ class ParticipantDto extends ApiObjectLinkable
      * @var MissionDto|null $missions
      */
     public ?MissionDto $missions = null;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore0
+     */
+    public int|float|null $playerScore0;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore1
+     */
+    public int|float|null $playerScore1;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore2
+     */
+    public int|float|null $playerScore2;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore3
+     */
+    public int|float|null $playerScore3;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore4
+     */
+    public int|float|null $playerScore4;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore5
+     */
+    public int|float|null $playerScore5;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore6
+     */
+    public int|float|null $playerScore6;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore7
+     */
+    public int|float|null $playerScore7;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore8
+     */
+    public int|float|null $playerScore8;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore9
+     */
+    public int|float|null $playerScore9;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore10
+     */
+    public int|float|null $playerScore10;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore11
+     */
+    public int|float|null $playerScore11;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore12
+     */
+    public int|float|null $playerScore12;
 }

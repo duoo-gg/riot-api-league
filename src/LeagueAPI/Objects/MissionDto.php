@@ -1,0 +1,138 @@
+<?php
+
+/**
+ * Copyright (C) 2016-2023  Edwin Flataunet
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+namespace RiotAPI\LeagueAPI\Objects;
+
+
+/**
+ *   Class MatchTeamDto
+ *
+ * Used in:
+ *   match (v5)
+ *     - @see LeagueAPI::getMatch
+ *       @link https://developer.riotgames.com/apis#match-v5/GET_getMatch
+ *
+ * @package RiotAPI\LeagueAPI\Objects
+ */
+class MissionDto extends ApiObject
+{
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore0
+     */
+    public int|float|null $playerScore0;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore1
+     */
+    public int|float|null $playerScore1;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore2
+     */
+    public int|float|null $playerScore2;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore3
+     */
+    public int|float|null $playerScore3;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore4
+     */
+    public int|float|null $playerScore4;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore5
+     */
+    public int|float|null $playerScore5;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore6
+     */
+    public int|float|null $playerScore6;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore7
+     */
+    public int|float|null $playerScore7;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore8
+     */
+    public int|float|null $playerScore8;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore9
+     */
+    public int|float|null $playerScore9;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore10
+     */
+    public int|float|null $playerScore10;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore11
+     */
+    public int|float|null $playerScore11;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var int|float|null $playerScore12
+     */
+    public int|float|null $playerScore12;
+}

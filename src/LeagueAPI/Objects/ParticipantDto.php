@@ -1098,4 +1098,12 @@ class ParticipantDto extends ApiObjectLinkable
      * @var int|null $placement
      */
     public ?int $placement = null;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var array|null $missions
+     */
+    public ?array $missions = null;
 }

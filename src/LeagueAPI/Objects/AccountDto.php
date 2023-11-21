@@ -27,7 +27,17 @@ class AccountDto extends ApiObject
      */
     public string $puuid;
 
+    /**
+     * Available when received from:
+     *
+     * @var string $gameName
+     */
     public string $gameName;
 
+    /**
+     * Available when received from:
+     *
+     * @var string $tagLine
+     */
     public string $tagLine;
 }

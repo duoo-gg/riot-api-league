@@ -2,7 +2,7 @@
 
 namespace RiotAPI\LeagueAPI\Objects;
 
-class AccountDto
+class AccountDto extends ApiObject
 {
     /**
      * Encrypted PUUID. Exact length of 78 characters.

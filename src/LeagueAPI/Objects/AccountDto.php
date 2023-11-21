@@ -2,6 +2,15 @@
 
 namespace RiotAPI\LeagueAPI\Objects;
 
+/**
+ *   Class BanDto
+ *
+ * Used in:
+ *   match (v5)
+ *     - @see LeagueAPI::getAccountByPuuid()
+ *
+ * @package RiotAPI\LeagueAPI\Objects
+ */
 class AccountDto extends ApiObject
 {
     /**

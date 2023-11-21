@@ -215,6 +215,42 @@ class LeagueAPI extends BaseAPI
 		return __DIR__ . "/../../tests/DummyData/{$method}_$endp$quer$data.json";
 	}
 
+    /**
+     * ==================================================================dd=
+     *     Account Endpoint Methods
+     *     @link https://developer.riotgames.com/apis#account-v1
+     * ==================================================================dd=
+     **/
+    const RESOURCE_ACCOUNT_VERSION = 'v1';
+
+    /**
+     *   Get single account object for a given summoner's PUUID.
+     *
+     * @cli-name get-by-puuid
+     * @cli-namespace account
+     *
+     * @param string $encrypted_puuid
+     *
+     * @return Objects\AccountDto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     *
+     * @link https://developer.riotgames.com/apis#account-v1/GET_getByPuuid
+     */
+    public function getAccountByPuuid( string $encrypted_puuid ): ?Objects\AccountDto
+    {
+        $resultPromise = $this->setEndpoint("/riot/account/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-puuid/$encrypted_puuid")
+            ->makeCall();
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function(array $result) {
+            return new Objects\AccountDto($result, $this);
+        });
+    }
+
 
 	/**
 	 * ==================================================================dd=

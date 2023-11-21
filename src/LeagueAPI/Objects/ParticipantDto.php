@@ -1210,4 +1210,12 @@ class ParticipantDto extends ApiObjectLinkable
      * @var int|float|null $playerScore12
      */
     public int|float|null $playerScore12;
+
+    /**
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string $riotIdGameName
+     */
+    public string $riotIdGameName;
 }

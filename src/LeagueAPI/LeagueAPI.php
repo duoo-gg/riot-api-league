@@ -251,6 +251,35 @@ class LeagueAPI extends BaseAPI
         });
     }
 
+    /**
+     *   Get single account object for a given riot ID
+     *
+     * @cli-name get-by-riot-id
+     * @cli-namespace account
+     *
+     * @param string $gameName
+     * @param string $tagLine
+     *
+     * @return Objects\AccountDto|null
+     *
+     * @throws SettingsException
+     * @throws RequestException
+     * @throws ServerException
+     * @throws ServerLimitException
+     * @throws GeneralException
+     *
+     * @link https://developer.riotgames.com/apis#account-v1/GET_getByRiotId
+     */
+    public function getAccountByRiotId( string $gameName, string $tagLine ): ?Objects\AccountDto
+    {
+        $resultPromise = $this->setEndpoint("/riot/account/" . self::RESOURCE_ACCOUNT_VERSION . "/accounts/by-riot-id/$gameName/$tagLine")
+            ->makeCall();
+
+        return $this->resolveOrEnqueuePromise($resultPromise, function(array $result) {
+            return new Objects\AccountDto($result, $this);
+        });
+    }
+
 
 	/**
 	 * ==================================================================dd=

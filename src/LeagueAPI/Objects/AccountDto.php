@@ -8,6 +8,7 @@ namespace RiotAPI\LeagueAPI\Objects;
  * Used in:
  *   match (v5)
  *     - @see LeagueAPI::getAccountByPuuid()
+ *     - @see LeagueAPI::getAccountByRiotId()
  *
  * @package RiotAPI\LeagueAPI\Objects
  */
@@ -20,6 +21,7 @@ class AccountDto extends ApiObject
      *   - @see LeagueAPI::getBySummonerId
      *   - @see LeagueAPI::getByPUUID
      *   - @see LeagueAPI::getByAccountId
+     *   - @see LeagueAPI::getAccountByRiotId
      *   - @see LeagueAPI::getBySummonerName
      *   - @see LeagueAPI::getByAccessToken
      *

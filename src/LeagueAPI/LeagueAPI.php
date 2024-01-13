@@ -827,14 +827,14 @@ class LeagueAPI extends BaseAPI
 	 *
 	 * @link https://developer.riotgames.com/apis#spectator-v4/GET_getCurrentGameInfoBySummoner
 	 */
-	public function getCurrentGameInfoBySummoner(string $encrypted_summoner_id): ?Objects\CurrentGameInfo
+	public function getCurrentGameInfoBySummoner(string $encrypted_summoner_id): array
 	{
 		$resultPromise = $this->setEndpoint("/lol/spectator/" . self::RESOURCE_SPECTATOR_VERSION . "/active-games/by-summoner/$encrypted_summoner_id")
 			->setResource(self::RESOURCE_SPECTATOR, "/active-games/by-summoner/%s")
 			->makeCall();
 
 		return $this->resolveOrEnqueuePromise($resultPromise, function(array $result) {
-			return new Objects\CurrentGameInfo($result, $this);
+			return $result;
 		});
 	}
 

@@ -186,4 +186,14 @@ class InfoDto extends ApiObject
 	 * @var string $tournamentCode
 	 */
 	public string $tournamentCode;
+
+    /**
+     * Urf thing
+     *
+     * Available when received from:
+     *   - @see LeagueAPI::getMatch
+     *
+     * @var string|null $endOfGameResult
+     */
+    public string|null $endOfGameResult;
 }

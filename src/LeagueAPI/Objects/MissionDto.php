@@ -36,103 +36,103 @@ class MissionDto extends ApiObject
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore0
+     * @var int|float|null $PlayerScore0
      */
-    public int|float|null $playerScore0;
+    public int|float|null $PlayerScore0;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore1
+     * @var int|float|null $PlayerScore1
      */
-    public int|float|null $playerScore1;
+    public int|float|null $PlayerScore1;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore2
+     * @var int|float|null $PlayerScore2
      */
-    public int|float|null $playerScore2;
+    public int|float|null $PlayerScore2;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore3
+     * @var int|float|null $PlayerScore3
      */
-    public int|float|null $playerScore3;
+    public int|float|null $PlayerScore3;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore4
+     * @var int|float|null $PlayerScore4
      */
-    public int|float|null $playerScore4;
+    public int|float|null $PlayerScore4;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore5
+     * @var int|float|null $PlayerScore5
      */
-    public int|float|null $playerScore5;
+    public int|float|null $PlayerScore5;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore6
+     * @var int|float|null $PlayerScore6
      */
-    public int|float|null $playerScore6;
+    public int|float|null $PlayerScore6;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore7
+     * @var int|float|null $PlayerScore7
      */
-    public int|float|null $playerScore7;
+    public int|float|null $PlayerScore7;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore8
+     * @var int|float|null $PlayerScore8
      */
-    public int|float|null $playerScore8;
+    public int|float|null $PlayerScore8;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore9
+     * @var int|float|null $PlayerScore9
      */
-    public int|float|null $playerScore9;
+    public int|float|null $PlayerScore9;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore10
+     * @var int|float|null $PlayerScore10
      */
-    public int|float|null $playerScore10;
+    public int|float|null $PlayerScore10;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore11
+     * @var int|float|null $PlayerScore11
      */
-    public int|float|null $playerScore11;
+    public int|float|null $PlayerScore11;
 
     /**
      * Available when received from:
      *   - @see LeagueAPI::getMatch
      *
-     * @var int|float|null $playerScore12
+     * @var int|float|null $PlayerScore12
      */
-    public int|float|null $playerScore12;
+    public int|float|null $PlayerScore12;
 }

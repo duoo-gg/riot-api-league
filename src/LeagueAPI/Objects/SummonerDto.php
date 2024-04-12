@@ -140,4 +140,6 @@ class SummonerDto extends ApiObject
 	 * @var int $summonerLevel
 	 */
 	public int $summonerLevel;
+
+    public string $internalName;
 }
